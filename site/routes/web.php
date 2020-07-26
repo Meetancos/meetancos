@@ -38,4 +38,11 @@ SimpleRouter::get(
     }
 );
 
+SimpleRouter::get(
+    '/meetech',
+    function () use ($twig) {
+        return $twig->render('');
+    }
+);
+
 SimpleRouter::start();
