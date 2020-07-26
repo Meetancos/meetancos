@@ -19,11 +19,9 @@ class SponsorshipRepository extends Repository
                     1, 'Bling ERP', 'https://bling.com.br', '/assets/images/sponsorship/bling.png'
                 ),
                 2 => new SponsorshipModel(
-                    2, 'Hos Sistemas', 'https://hos.com.br', '/assets/images/sponsorship/hos.png'
+                    1, 'Hos Sistemas', 'https://hos.com.br', '/assets/images/sponsorship/hos.png'
                 ),
-                3 => new SponsorshipModel(
-                    3, 'tiny ERP', 'https://tiny.com.br', '/assets/images/sponsorship/tiny.png'
-                ),
+                3 => new SponsorshipModel(1, 'tiny ERP', 'https://tiny.com.br', '/assets/images/sponsorship/tiny.png'),
             ];
     }
 
