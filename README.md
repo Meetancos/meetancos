@@ -26,9 +26,11 @@ Descrição: Site do grupo
 
 `cd meetancos`
 
-2) Criar o arquivo .env do site:  
+2) Criar os arquivos  de .env:  
 
-`cp site/.env.example site/.env`
+- `cp .env.example .env`
+
+- `cp site/.env.example site/.env`
 
 3) Fazer build no docker do projeto:
  
