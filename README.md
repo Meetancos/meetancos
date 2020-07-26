@@ -6,6 +6,10 @@
 
 - docker-compose (1.25+)
 
+*Caso não consiga rodar o docker sem ser root execute*
+
+`sudo usermod -aG docker ${USER}`
+
 ## Serviços
 
 - Site
