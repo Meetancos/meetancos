@@ -1,0 +1,48 @@
+{
+    "name": "meetancos/site",
+    "description": "Site dos Meetanços",
+    "type": "project",
+    "keywords": [
+        "meetancos",
+        "site"
+    ],
+    "homepage": "http://github.com/meetancos/site",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fernando Henrique",
+            "email": "fernando@webscientist.com.br",
+            "homepage": "http://webscientist.com.br/"
+        }
+    ],
+    "require": {
+        "php": "^7.2.5",
+        "pecee/simple-router": "4.2.0.6",
+        "vlucas/phpdotenv": "^5.1",
+        "twig/twig": "^3.0"
+    },
+    "require-dev": {
+        "jangregor/phpstan-prophecy": "^0.8.0",
+        "phpstan/extension-installer": "^1.0.4",
+        "phpstan/phpstan": "^0.12.33",
+        "phpunit/phpunit": "^8.5"
+    },
+    "config": {
+        "process-timeout": 0,
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "start": "php -S localhost:8080 -t public",
+        "test": "phpunit"
+    }
+}

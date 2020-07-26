@@ -1,0 +1,52 @@
+{% if sponsorships|length > 0 %}
+<!--SPONSORED-->
+<section>
+    <div id="lgx-sponsors" class="lgx-sponsors">
+        <div class="lgx-inner-bg">
+            <div class="lgx-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="lgx-heading">
+                                <h2 class="heading">Patrocinadores</h2>
+                                <h3 class="subheading">Esses são nossos patrocinadores memoráveis!</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//main row-->
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h3 class="sponsored-heading first-heading">Patrocínio Gold</h3>
+                            <div class="sponsors-area sponsors-area-nogap sponsors-area-noshadow sponsors-area-col3">
+                                {% for sponsorship in sponsorships%}
+                                <div class="single">
+                                    <a class="" href="{{sponsorship.url}}" target="_blank"><img
+                                            src="{{sponsorship.image}}" alt="{{sponsorship.name}}"/></a>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <!--//col-->
+                    </div>
+                    <!--//row-->
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h3 class="sponsored-heading secound-heading">Apoio</h3>
+                            <div class="sponsors-area sponsors-area-noshadow sponsors-area-nogap">
+                                <div class="single">
+                                    <a class="" href="https://cadmax.net/" target="_blank"><img
+                                            src="http://placehold.it/467x157" alt="Cadmax"/></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//col-->
+                    </div>
+                </div>
+                <!--//container-->
+            </div>
+        </div>
+        <!--//lgx-inner-->
+    </div>
+</section>
+<!--SPONSORED END-->
+{% endif %}
