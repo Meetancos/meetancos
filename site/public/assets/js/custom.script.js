@@ -13,11 +13,12 @@
 
         $(window).on('scroll', function () {
             var windowpos = $(window).scrollTop();
-            if (windowpos >= pos.top) {
+            if (windowpos >= 15) {
                 s.addClass("menu-onscroll");
             } else {
                 s.removeClass("menu-onscroll");
             }
+            // console.table({wpos: windowpos, tpos: pos.top});
         });
 
         /*=========================================================================
