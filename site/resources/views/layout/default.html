@@ -57,10 +57,10 @@
 
 
     <!-- BOOTSTRAP CSS -->
-    <link rel="stylesheet" href="/assets/libs/bootstrap/css/bootstrap.min.css" media="all"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="/assets/libs/fontawesome/css/font-awesome.min.css" media="all"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="all"/>
 
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="/assets/libs/maginificpopup/magnific-popup.css" media="all"/>
@@ -76,10 +76,10 @@
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oswald:400,700%7cPoppins:300,400,400i,600,600i,700,800,900"/>
 
     <!-- MASTER  STYLESHEET  -->
-    <link id="lgx-master-style" rel="stylesheet" href="/assets/css/style-default.min.css" media="all"/>
+    <link id="lgx-master-style" rel="stylesheet" href="/assets/css/style-default.css" media="all"/>
 
     <!-- MODERNIZER CSS  -->
-    <script src="/assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </head>
 
 <body class="home">
@@ -111,16 +111,17 @@
 <!--//.LGX SITE CONTAINER-->
 <!-- *** ADD YOUR SITE SCRIPT HERE *** -->
 <!-- JQUERY  -->
-<script src="/assets/js/vendor/jquery-1.12.4.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" 
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 
 <!-- BOOTSTRAP JS  -->
-<script src="/assets/libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 <!-- Smooth Scroll  -->
-<script src="/assets/libs/jquery.smooth-scroll.js"></script>
+<script src="https://cdn.statically.io/gh/kswedberg/jquery-smooth-scroll/3948290d/jquery.smooth-scroll.min.js"></script>
 
 <!-- SKILLS SCRIPT  -->
-<script src="/assets/libs/jquery.validate.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js"></script>
 
 <!-- if load google maps then load this api, change api key as it may expire for limit cross as this is provided with any theme -->
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQvRGGtL6OrpP5xVMxq_0NgiMiRhm3ycI"></script>
@@ -129,35 +130,53 @@
 <script type="text/javascript" src="/assets/libs/gmap/jquery.googlemap.js"></script>
 
 <!-- adding magnific popup js library -->
-<script type="text/javascript" src="/assets/libs/maginificpopup/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 
 <!-- Owl Carousel  -->
-<script src="/assets/libs/owlcarousel/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
 
 <!-- COUNTDOWN   -->
 <script src="/assets/libs/countdown.js"></script>
-<script src="/assets/libs/timer/TimeCircles.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/timecircles/1.5.3/TimeCircles.min.js"></script>
 
 <!-- Counter JS -->
-<script src="/assets/libs/waypoints.min.js"></script>
-<script src="/assets/libs/counterup/jquery.counterup.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
 
 <!-- SMOTH SCROLL -->
-<script src="/assets/libs/jquery.smooth-scroll.min.js"></script>
-<script src="/assets/libs/jquery.easing.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 
 <!-- type js -->
-<script src="/assets/libs/typed/typed.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.6/lib/typed.min.js"></script>
 
 <!-- header parallax js -->
-<script src="/assets/libs/header-parallax.js"></script>
+<script src="/assets/js/header-parallax.js"></script>
 
 <!-- instafeed js -->
-
-<script src="/assets/libs/instafeed.min.js"></script>
+<script type="text/javascript" src="https://cdn.boomcdn.com/libs/instafeed-js/1.4.1/instafeed.min.js"></script>
 
 <!-- CUSTOM SCRIPT  -->
 <script src="/assets/js/custom.script.js"></script>
+
+<script>
+    //if ($(window).width() >= 900) {
+    
+        var $wrapper = document.querySelector('#video');
+
+        HTMLNovo =
+            '<video class="video-player" preload="auto" webkit-playsinline="" autoplay loop muted >';
+        HTMLNovo += '<source src="/assets/videos/bento.mp4" type="video/mp4" />';
+        HTMLNovo +=
+            '<source src="/assets/videos/bento.ogv" type="video/ogg; codecs=\'theora, vorbis\' "/>';
+        HTMLNovo += '<source src="/assets/videos/bento.ogg" type="video/ogg; codecs=\'theora, vorbis\' "/>';
+        HTMLNovo +=
+            '<source src="/assets/videos/bento.webm" type="video/webm; codecs=\'theora, vorbis\' " />';
+        HTMLNovo += '</video>';
+
+        $wrapper.insertAdjacentHTML('afterbegin', HTMLNovo);
+    //}
+</script>
 
 </body>
 </html>
