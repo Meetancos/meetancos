@@ -20,6 +20,16 @@ Tecnologias: PHP
 
 Descrição: Site do grupo
 
+## Requisitos
+
+**Programas de Linha de Comando**
+- curl
+- unzip
+
+**Extensões PHP**
+- php-ext
+- php-mbstring
+
 ## Como Iniciar
 
 1. Clonar o projeto do github: 
@@ -55,7 +65,7 @@ Descrição: Site do grupo
 
 **Atualizar os pacotes**
 - `cd site`
-- `composer update -o`
+- `composer install -o`
 
 ## Como Acessar
 
