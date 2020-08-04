@@ -22,27 +22,40 @@ Descrição: Site do grupo
 
 ## Como Iniciar
 
-1) Clonar o projeto do github: 
+1. Clonar o projeto do github: 
 
 `git clone git@github.com:Meetancos/meetancos.git`
 
-2) Entra na pasta: 
+2. Entra na pasta: 
 
 `cd meetancos`
 
-2) Criar os arquivos  de .env:  
+3. Criar os arquivos  de .env:  
 
 - `cp .env.example .env`
 
 - `cp site/.env.example site/.env`
 
-3) Fazer build no docker do projeto:
+4. Fazer build no docker do projeto:
  
  `docker-compose build` 
 
-4) Subir no docker o projeto: 
+5. Subir no docker o projeto: 
 
 `docker-compose up -d`
+
+6. Instalar a ferramenta composer caso ainda não a tenha instalado e atualizar as dependências:
+
+**Instalação**
+- `php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"`
+- `php -r "if (hash_file('sha384', 'composer-setup.php') === 'e5325b19b381bfd88ce90a5ddb7823406b2a38cff6bb704b0acc289a09c8128d4a8ce2bbafcd1fcbdc38666422fe2806') { echo 'Instalador válido, prossiga!'; } else { echo 'O Instalador está corrompido, tente baixá-lo novamente'; unlink('composer-setup.php'); } echo PHP_EOL;"`
+- `php composer-setup.php`
+- `php -r "unlink('composer-setup.php');"`
+- `sudo mv composer.phar /usr/local/bin/composer`
+
+**Atualizar os pacotes**
+- `cd site`
+- `composer update -o`
 
 ## Como Acessar
 
