@@ -95,9 +95,6 @@
 
 {{ include('layout/menu.html')}}
 
-{{ include('layout/proximo_evento.html')}}
-
-
 {% block content %}{% endblock %}
 
 
@@ -159,24 +156,7 @@
 <!-- CUSTOM SCRIPT  -->
 <script src="/assets/js/custom.script.js"></script>
 
-<script>
-    //if ($(window).width() >= 900) {
-    
-        var $wrapper = document.querySelector('#video');
-
-        HTMLNovo =
-            '<video class="video-player" preload="auto" webkit-playsinline="" autoplay loop muted >';
-        HTMLNovo += '<source src="/assets/videos/bento.mp4" type="video/mp4" />';
-        HTMLNovo +=
-            '<source src="/assets/videos/bento.ogv" type="video/ogg; codecs=\'theora, vorbis\' "/>';
-        HTMLNovo += '<source src="/assets/videos/bento.ogg" type="video/ogg; codecs=\'theora, vorbis\' "/>';
-        HTMLNovo +=
-            '<source src="/assets/videos/bento.webm" type="video/webm; codecs=\'theora, vorbis\' " />';
-        HTMLNovo += '</video>';
-
-        $wrapper.insertAdjacentHTML('afterbegin', HTMLNovo);
-    //}
-</script>
+{% block script %}{% endblock %}
 
 </body>
 </html>

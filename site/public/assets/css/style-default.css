@@ -11761,6 +11761,9 @@ blockquote.lgx-testi-single:before {
 .lgx-subscribe-form .lgx-btn:hover {
   background: #ec398b;
 }
+#subscribe-submit {
+  width: 300px;
+}
 /*-------------------------------------------------------------------*/
 /* 2.20 FOOTER
 ---------------------------------------------------------------------*/
